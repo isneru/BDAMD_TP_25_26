@@ -1,0 +1,48 @@
+### IntelliJ IDEA / DataGrip ###
+.idea/
+
+# Ficheiros de projeto base
+*.iml
+*.ipr
+*.iws
+
+# Ficheiros de configuração de Data Sources locais
+.idea/dataSources.local.xml
+.idea/dataSources/
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/shelf/
+
+### SQL & Data Exports ###
+*.csv
+*.json
+*.xlsx
+*.xml
+
+*.dump
+*.sql.gz
+
+### Sistema Operativo (Windows & Linux/WSL) ###
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux / WSL (Ficheiros temporários de editores)
+*~
+*.swp
+
+### Ficheiros do Trabalho ###
+*.zip
+*.rar
+*.7z
+
+### Logs & Credenciais ###
+*.log
+.env
