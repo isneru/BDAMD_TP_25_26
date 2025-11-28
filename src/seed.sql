@@ -145,7 +145,7 @@ VALUES (1, '10000001', 'Diogo', 'Rua 1', '200000001', 2500.00, 'Gerente', '1970-
        (5, '10000005', 'Joao', 'Rua 5', '200000005', 800.00, 'Motorista', '1993-01-01', 1, 2, 4),
        (6, '10000006', 'Lucas', 'Rua 6', '200000006', 800.00, 'Motorista', '1994-01-01', 1, 2, 4),
        (7, '10000007', 'Vitor', 'Rua 7', '200000007', 800.00, 'Motorista', '1995-01-01', 1, 2, 4),
-       (8, '10000008', 'Vasco', 'Rua 8', '200000008', 900.00, 'Vendedor', '1990-01-01', 2, 1, 1),
+       (8, '10000008', 'Vasco', 'Rua 8', '200000008', 900.00, 'Vendedor', '1990-01-01', 1, 1, 1),
        (9, '10000009', 'Francisco', 'Rua 9', '200000009', 900.00, 'Vendedor', '1990-01-01', 2, 1, 1),
        (10, '10000010', 'Guilherme', 'Rua 10', '200000010', 900.00, 'Vendedor', '1990-01-01', 3, 1, 9),
        (11, '10000011', 'Ze', 'Rua 11', '200000011', 950.00, 'Motorista', '1995-05-05', 1, 2, 4),
@@ -313,9 +313,9 @@ VALUES (1, 1, 10),
 GO
 
 -- 10. Stock (Quantidade em Zonas)
--- Query 2.2: Adicionar stock para 'Centro Lisboa' (WH 3) e 'Armazém Braga' (WH 4) para terem os mesmos produtos que 'Armazém Central do Porto' (WH 1)
--- Query 2.4: Fazer com que a zona 11 ('Z1 WH6') atinja a sua capacidade máxima de 100.
--- Query 2.7: Product 1 in Warehouse 1 has 20 units (Min is 10). 20 >= 10 + (10*0.5) -> 20 >= 15. TRUE.
+-- Query 2.2: adicionar stock para 'Centro Lisboa' (WH 3) e 'Armazém Braga' (WH 4) para terem os mesmos produtos que 'Armazém Central do Porto' (WH 1)
+-- Query 2.4: fazer com que a zona 11 ('Z1 WH6') atinja a sua capacidade máxima de 100.
+-- Query 2.7: product 1 in Warehouse 1 has 20 units (Min is 10). 20 >= 10 + (10*0.5) -> 20 >= 15. TRUE.
 INSERT INTO Stock (physical_zone_id, product_ref, quantity)
 VALUES (3, 1, 20),
        (1, 1, 100),
